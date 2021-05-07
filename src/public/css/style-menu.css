@@ -1,0 +1,309 @@
+body {
+    background-color: #603813;
+}
+
+.menu-cafe{
+
+    height: 800px;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 50px ;
+    color: white;
+    }
+
+    .menu-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+.menu-titulo{
+    display: block;
+    position: relative;
+    margin: auto auto;
+    width: 15vw;
+    height: 6vw;
+    font-size: 2.5vw;
+    background-color: darkgray;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container-cafe{
+    text-align: left;
+}
+
+.black-coffee{
+    
+    margin: 0 0 0 25vw;
+    padding: 50px 0px 30px 0px;
+
+}
+
+.black-coffee p{
+
+    padding: 2px 0px 1px 0px;
+
+}
+
+
+.milk-coffee{
+
+    padding: 50px 0px 30px 0px;
+    margin: 0 0 0 25vw;
+}
+
+.milk-coffee p{
+    padding: 1px 0px 1px 0px;
+}
+
+.special-coffee{
+    padding: 50px 0px 30px 0px;
+    margin: 0 0 0 25vw;
+}
+
+.special-coffee p{
+    padding: 1px 0px 1px 0px;
+}
+
+/* precios */
+
+.container-cafe-precio{
+    text-align: left;
+}
+
+.black-coffee-precio{
+    margin: 0 0 0 17vw;
+    padding: 75px 0px 30px 0px;
+
+}
+.black-coffee-precio p{
+    padding: 2px 0px 1px 0px;
+
+}
+
+.special-coffee-precio{
+    padding: 77px 0px 30px 0px;
+    margin: 0 0 0 17vw;
+}
+
+.special-coffee-precio p{
+    padding: 1px 0px 1px 0px;
+}
+
+.milk-coffee-precio{
+    padding: 80px 0px 30px 0px;
+    margin: 0 0 0 17vw;
+}
+
+.milk-coffee-precio p{
+    padding: 1px 0px 1px 0px;
+}
+/* imagenes */
+
+.taza-cafe{
+    position: absolute;
+    width: 20vw;
+    top: 160%;
+}
+
+.right-cafe{
+    right: 5%;
+}
+
+.grano-de-cafe{
+    position: absolute;
+    width: 15vw;
+}
+
+.grano-de-cafe-2{
+    position: absolute;
+    width: 17vw;
+    right: 7%;
+}
+
+
+@media (max-width:923px){
+    .container-cafe-precio .special-coffee-precio p{
+        line-height: 20px;
+    } 
+
+    .special-coffee-precio{
+        padding: 105px 0px 30px 0px;
+        margin: 0 0 0 17vw;
+    }
+}
+
+@media (max-width:906px){
+    /* precios */
+
+.container-cafe-precio{
+    text-align: left;
+}
+
+.black-coffee-precio{
+    padding: 80px 30px 0px;
+    margin: 0 0 0 13.5vw;
+
+}
+
+.milk-coffee-precio{
+
+    padding: 135px 0px 30px 0px;
+    margin: 0 0 0 17vw;
+}
+
+.special-coffee-precio{
+
+    padding: 110px 0px 30px 0px;
+    margin: 0 0 0 17vw;
+}
+}
+
+@media (max-width:886px) {
+
+    .grano-de-cafe{
+        display: block;
+    }
+
+    .grano-de-cafe-2{
+        display: block;
+    }
+
+    .taza-cafe{
+        position: absolute;
+       
+    }
+    
+    .right-cafe{
+        right: 5%;
+    }
+
+    
+    .container-cafe-precio .special-coffee-precio .p1{
+        padding:10px 0 0 0;
+    }
+    .container-cafe-precio .special-coffee-precio .p2{
+        padding:15px 0 0 0;
+    }
+    .container-cafe-precio .special-coffee-precio .p3{
+        padding:7px 0 0 0;
+    }
+}
+
+@media (max-width:840px) {
+
+    .container-cafe-precio .special-coffee-precio .p1{
+        padding:10px 0 0 0;
+    }
+    .container-cafe-precio .special-coffee-precio .p2{
+        padding:25px 0 0 0;
+    }
+    .container-cafe-precio .special-coffee-precio .p3{
+        padding:10px 0 0 0;
+    }
+}
+
+@media (max-width:770px){
+
+    .container-cafe-precio{
+        padding-top: 23.5px;
+    }
+
+    .container-cafe-precio .milk-coffee-precio{
+        padding-top: 140px;
+    }
+}
+
+@media (max-width:720px){
+
+}
+
+@media (max-width:650px){
+
+
+    .black-coffee{
+        margin: 0 0 0 10vw;
+        padding: 50px 0px 30px 0px;
+    }
+            
+    .img-menu-cafe{
+        display: none;
+    }
+
+    .milk-coffee{
+    
+        padding: 50px 0px 30px 0px;
+        margin: 0 0 0 10vw;
+    }
+    
+    .special-coffee{
+        padding: 50px 0px 30px 0px;
+        margin: 0 0 0 10vw;
+    }
+
+    /*precios */
+
+    .container-cafe-precio{
+        padding-top: 0.5px;
+    }
+
+    .container-cafe-precio .milk-coffee-precio{
+        padding-top: 110px;
+    }
+    .container-cafe-precio .special-coffee-precio{
+        padding-top: 71px;
+    }
+
+    .container-cafe-precio .special-coffee-precio .p1{
+        padding:1px 0 0 0;
+    }
+    .container-cafe-precio .special-coffee-precio .p2{
+        padding:1px 0 0 0;
+    }
+    .container-cafe-precio .special-coffee-precio .p3{
+        padding:1px 0 0 0;
+    }
+
+}
+@media (max-width:576px){
+
+     .container-cafe-precio .milk-coffee-precio{
+        padding-top: 132px;
+    }
+    .container-cafe-precio .special-coffee-precio{
+        padding-top: 112px;
+    }
+
+    .container-cafe-precio .special-coffee-precio .p1{
+        padding:1px 0 0 0;
+    }
+    .container-cafe-precio .special-coffee-precio .p2{
+        padding: 22px 0 0 0;
+    }
+    .container-cafe-precio .special-coffee-precio .p3{
+        padding:15px 0 0 0;
+    }
+}
+
+@media (max-width:481px){
+    .container-cafe-precio .black-coffee-precio{
+        padding-top: 108px;
+    }
+    .container-cafe-precio .milk-coffee-precio{
+        padding-top: 133px;
+    }
+    .container-cafe-precio .special-coffee-precio{
+        padding-top: 113px;
+    }
+
+    .container-cafe-precio .special-coffee-precio .p1{
+        padding:1px 0 0 0;
+    }
+    .container-cafe-precio .special-coffee-precio .p2{
+        padding:15px 0 0 0;
+    }
+    .container-cafe-precio .special-coffee-precio .p3{
+        padding:18px 0 0 0;
+    }
+}

@@ -1,0 +1,771 @@
+/* Documento General */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Brygada' ;
+}
+
+html{
+    margin: 0;
+}
+
+@font-face{
+    font-family: 'Brygada';
+    src: url(../font/Brygada.ttf);
+}
+
+@font-face{
+    font-family: 'Dancing';
+    src: url(../font/DancingScript.ttf);
+}
+
+/* cuerpo del documento */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 80%;
+}
+
+
+/* primer fondo */
+
+.img-1{
+    background-image: url('../img/bg-photo_optimized.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+/* navegacion */
+
+/*Primer nombre*/
+
+    .nombre{
+        color: wheat;
+        position: absolute;
+        top: 75px;
+        left: 35%;
+        z-index: 3;
+        display: none;
+        transition: all 200ms ease-in-out;
+    }
+
+    .nombre-grande{
+       position: absolute;
+       width: 80%;
+       top: 200px;
+       left: 17vw;
+    }
+    .nombre-grande h2{
+        font-family:'Dancing';
+        font-size: 12vw;
+        color: wheat;
+    }
+
+    .logo {
+        position: absolute;
+        width: 25vw;
+        top: 63px;
+        background-color: wheat;
+        border-radius: 25px;
+        text-align: center;
+        left: 40px;
+    }
+
+    .logo2{
+        display: none;
+        position: absolute;
+        width: 100px;
+        left: 50px;
+        top: 40px;
+    }
+
+    .logo21{
+        width:150px;
+    }
+
+    .logo3{
+        display: none;
+        position: absolute;
+        width: 37px;
+        top: 35px;
+        left: 37px;
+    }
+
+    .btn a img{
+        width: 25px;
+        position: absolute;
+        left: 65vw;
+        top: 78px;
+        display: none;
+        cursor: pointer;
+        z-index: 6;
+    }
+
+    .btn a img:hover{  
+        content:'';
+        transform: scale(1.2);
+    }
+
+.stick{
+    margin: auto;
+    position: absolute;
+    display: flex;
+    top: 70px;
+    height: 50px;
+    width: 520px;
+    left: 33vw;
+    background: #F3904F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    z-index: 1;
+}
+   
+
+.stick img{
+   position: relative;
+   left: 440px;
+   top: 5px;
+   width: 50%;
+   z-index: 5;
+}
+
+/* Menu 2*/
+
+.menu2-ul{
+    transition: transform 250s ease-in;
+    position: absolute;
+    display: flex;
+    padding: 12px 0 0 0;
+    left: 35vw;
+    top: 57px;
+    z-index: 5;
+    
+}
+
+.menu2 ul li{
+    padding: 10px 20px 10px 0;
+    font-size: 28px;
+}
+
+.container-menu2{
+    transition: all 550ms ease-out;
+}
+
+.menu2 ul li a {
+    color: wheat;
+    font-weight: 800;
+}
+
+
+/* animate--animacion */
+.menu2 ul li a:after{
+    display:block;
+    content: '';  
+    border-bottom: 5px solid gray;
+    transform: scaleX(0);
+    transition: transform 350ms ease-in-out;
+    transform-origin:50% 50%;
+}
+
+.menu2 ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin:0% 100%;
+    border-bottom: 5px solid gray;
+} */
+
+/* seccion one-- coffee */
+
+.container{
+    width: 100%;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 20px;
+    background: #603813;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #b29f94, #603813);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #b29f94, #603813); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid: 2;
+}
+
+.column .ground-coffee{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column .text{
+    font-size: 20px;
+    text-align: center;
+    color: #f5deb3;
+    padding: 5px 15px 5px 10x;
+}
+
+.column .text h1{
+    padding-bottom: 10px;
+ }
+.column .text p{
+   padding-top: 10px;
+}
+
+.column img{
+    width: 18vw;
+    position:relative;
+}
+
+#granos2{
+    display: none;
+}
+#grano3{
+    display: none;
+}
+
+/* Criticas */
+.container2{
+   background-color: wheat; 
+   padding: 40px 0;
+}
+.column2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid: 20px;
+    text-align: center;
+    margin: auto;
+    
+    
+}
+
+.c {
+    margin: 30px 25px;
+    padding: 10px 5px;
+    background-color: #603813;
+    color: wheat; 
+}
+
+.title-critica{
+    font-weight:900;
+    position: relative;
+    margin: 10px 0 5px 50px;
+}
+
+/* fotos */
+
+.fotos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid: 20px;
+   text-align: center;
+   margin: 30px ;
+}
+
+
+
+.img img{
+    margin: 20px;
+    border-style:ridge;
+    border-width: 20px;
+    border-color: #603813;
+    }
+
+.ubicacion{
+    background-color: #603813;
+    width: 100%;
+    height: 30%;
+    z-index: 4;
+}
+
+.localizacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.ubicacion .localizacion img{
+    width: 60%;
+    height: 30vw;
+    opacity: .8;
+    }
+
+.ubicacion .localizacion-text{
+
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    color: wheat; 
+    }
+
+/* footer */
+
+.column3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:40px 20px;
+    background: #603813;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #b29f94, #603813);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #b29f94, #603813); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid: 2;
+    z-index: 8;
+}
+
+@media(max-width:880px){
+    .column3 {
+        grid-template-columns:1fr;
+        padding-bottom: 100px;
+        width: 100%;
+
+    }
+
+    .copy h5{
+        font-size: 3vw;
+        position: relative;
+        left: 2vw;
+    }
+    
+
+    .row-contact{
+        display: flex;
+        width: 100%;
+    }
+
+    .row-contact .redes{
+        text-align: center;
+        width: 80%;
+        margin-left: 0vw;
+        margin-top: 30px;
+    }
+    
+
+}
+
+.copy{
+    text-align: center;
+    color: wheat;
+}
+
+.copy h5{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.copy h5 p{
+    opacity: .5;
+    font-size: 1.5vw;
+    text-align: center;
+}
+.texto{
+    display: flex;
+    text-align: left;
+}
+
+.row-contact{
+    display: flex;
+    height: 2vh;
+}
+
+.row-contact .redes h4{
+    font-size: 3vw;
+    color: wheat ;
+    text-align: center;
+    
+}
+
+.row-contact .redes{
+    padding: 0 0 0 0;
+    text-align: center;
+}
+
+.row-contact .redes{
+    text-align: center;
+    width: 100%;
+    margin-left: 5vw;
+}
+
+.row-contact .redes ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+
+.row-contact .redes ul li a,
+.row-contact .contact ul li a{
+     font-size: 20px;
+     color: wheat;
+}
+
+.row-contact .redes ul li{
+    padding: 1vh 1vw;
+    margin:5px;
+    background-color: #603813;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.row-contact .redes ul li a:hover,
+.row-contact .contact ul li a:hover{
+ text-decoration: line-through;
+ transform: scaleX(1);
+ transition: transform 350ms ease-in-out;
+}
+
+/* adaptacion pantalla 700px */
+@media (max-width:1200px){
+
+    .column img{
+        width: 15vw;
+        position:relative;
+        bottom: 20%;
+    }
+
+}
+@media (max-width:800px){
+
+/* seccion one-- informacion-coffee */
+    .stick img {
+        display: none;
+   }
+    .nombre{
+       display: block;
+       font-size: 2.2vw;
+    }
+
+    .btn a img{
+        display: block;
+    }
+    
+    .menu2 ul{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20%;
+        height: 100%;
+        background-color: darkgray;
+        opacity: .9;
+        text-align: center;
+        z-index: 2;
+        padding-top: 40px;
+       
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo2{
+        display: block;
+    }
+
+    .logo3{
+        display: block;
+    }
+
+    .menu2 ul li{
+        padding: 10 0 0 0;
+        font-size: 2.5vw;
+        color: black;
+    }
+
+    .menu2 ul li a{
+        color: black;
+    }
+
+    .show2{
+        transform: translateX(-500px);
+    }
+
+
+    .column img{
+        display: none;
+        width: 30%;
+        height: 30%;
+        padding: auto;
+        
+    }
+
+    .column #granos2{
+        display: flex;
+        width: 15vw;
+        height: 15vw;
+    }
+    
+
+    .nombre-efecto{
+        transform: translateX(-500px);
+        transition: all 200ms ease-in-out;
+    }
+
+    .stick{
+        width: 40vw;
+    }
+
+
+/* Criticas del cafe */
+
+.column2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid: 20px;
+    text-align: center;
+    margin: auto;
+    
+    
+}
+
+.c {
+    margin: 20px 15px;
+    padding: 10px 5px;
+    background-color: #603813;
+    color: wheat; 
+}
+
+
+/* fotos */
+
+.fotos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: 30px ;
+}
+
+.ubicacion .localizacion-text{
+
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    color: wheat; 
+    }
+
+/* footer */
+
+.copy{
+    font-size: 20px;
+    text-align: center;
+    color: wheat;
+}
+
+.contact{
+    padding-left: 20px;
+}
+} 
+
+@media(max-width:600px){
+
+    .stick, .nombre{
+        display: none;
+    }
+
+    .btn a img{
+        position: absolute;
+        margin-left: 90px;
+        top: 50px;
+        width: 8%;
+        background: #603813;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #b29f94, #603813);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #b29f94, #603813);
+        cursor: pointer;
+        padding: 2px;
+        border-radius: 10px;
+    }
+
+    .img-1{
+        height: 300px;
+    }
+
+    .nombre-grande{
+        top: 150px ;
+    }
+
+    /* Informacion del cafe */
+
+    .column {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .column{
+        height: 450px;
+    }
+
+    .column #granos2{
+        display: none;
+    }
+    .column #grano3{
+        display: block;
+        width: 20vw;
+        height: 20vw;
+        margin: 5px 0;
+    }
+
+    .column .text{
+        font-size: 15px;
+        text-align: center;
+        color: wheat;
+        padding:5px;
+        text-align: justify;
+    }
+    
+    .column .text h1{
+        padding-bottom: 10px;
+     }
+    .column .text p{
+       padding-top: 10px;
+    }
+    
+    /* Crticas del cafe */
+
+    .column2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        margin: auto;  
+        
+    }
+    
+    .c {
+        margin: 10px 10px;
+        padding: 10px ;
+        background-color: #603813;
+        color: wheat; 
+    }
+
+    /* fotos */
+
+.fotos{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.ubicacion .localizacion-text{
+
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    color: wheat; 
+    }
+
+/* footer */
+
+.copy{
+    font-size: 5vw;
+    text-align: center;
+    color: wheat;
+    margin-bottom: 5;
+}
+
+.row-contact .redes ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.column3{
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+.contact{
+    padding: 0;
+    display: block;
+}
+
+.texto{
+    height: 40px;
+    padding: 20px 0 5px 0;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+} 
+
+.row-contact .redes ul li a,
+.row-contact .contact ul li a{
+     font-size: 4vw;
+}
+
+.logo2{
+    width: 50px;
+    left: 50px;
+    top: 20px;
+}
+
+.logo21{
+    width:100px;
+}
+
+.logo3{
+    width: 30px;
+    top: 22px;
+    left: 22px;
+}
+
+}
+@media (max-width:400px){
+    .btn a img{
+        width: 25px;
+        position: absolute;
+        left: 60vw;
+        bottom: 8px;
+        cursor: pointer;
+    }
+    .column3{
+        padding:20px 20px;
+    }
+}
+
+/* Scroll */
+
+.scroll{
+    opacity: 0;
+    transition: all 320ms;
+}
+/* animacion scroll */
+
+.scrollArriba{
+    animation: scrollArriba 1s;
+}
+
+@keyframes scrollArriba{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.scrollIzquierdo{
+    animation: scrollIzquierdo 2s;
+}
+
+@keyframes scrollIzquierdo{
+    0%{
+        transform: translatex(-300px);
+    }
+    100%{
+        transform: translatex(0);
+    }
+}
+
+

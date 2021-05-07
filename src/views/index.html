@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsunami-coffee</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animate.css">
+
+
+</head>
+
+
+<body onresize="tamaño()">
+
+    <!-- Navegacion ---menu1 y menu2 -->
+    <%- include ('comun/Navegacion.html')%>
+    <!-- Informacion del cafe -->
+
+    <div class="container column">
+        <div class="ground-coffee scroll">
+            <img src="img/beans_optimized.png" class="animate__animated animate__rotateIn" alt="granos de cafe" id="granos1">
+            <img src="img/coffee-beans.png" class="animate__animated animate__fadeInLeft" id="granos2" alt="img/coffee-beans.png">
+            <img src="img/coffee-bean.png" alt="granos" class="animate__animated animate__fadeInLeft" id="grano3">
+        </div>
+        <div class="text">
+            <h1>Tomar cafe no sucede por accidente.</h1>
+            <p>El cafe es un gusto increible. Si trabajamos junto a los mejores cultivos de cafe proporcionado por granjas con reconocimiento mundial. </p>
+            <p>De esta manera, nos encargamos de brindarle el mejor cafe posibole</p>
+        </div>
+    </div>
+
+    <!-- Seccion two -->
+
+    <div class="container2 container scroll">
+        <div class="recomendaciones column2">
+
+            <div class="c one">
+                <h2>9/10: Una avalancha de sabores.</h2>
+                <h3>Absolutamente divino.</h3>
+            </div>
+
+            <div class="c two">
+                <h2>10/10: El mejor cafe de la ciudad.</h2>
+                <h3>No dejes de Probarlo.</h3>
+            </div>
+
+            <div class="c tree">
+                <h2>9/10:Excelente servicio.</h2>
+                <h3>Atencion rapida.</h3>
+            </div>
+
+        </div>
+        <div class="title-critica">
+            <h4>~Criticas del cafe</h4>
+        </div>
+    </div>
+
+    <!-- Seccion tree--imagenes -->
+    <div class="container">
+
+        <div class="fotos scroll">
+
+            <div class="img">
+                <img src="img\imagen2_optimized.png" alt="">
+            </div>
+            <div class="img">
+                <img src="img\imagen1_optimized.png" alt="">
+            </div>
+            <div class="img">
+                <img src="img\imagen3_optimized.png" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+    <!-- Ubicacion -->
+
+    <div class="ubicacion">
+        <div class="localizacion scroll">
+            <img src="img/mapa_optimized_optimized.png" alt="">
+        </div>
+        <div class="localizacion-text">
+            <h4>Ubicado en la Urb.Calicanto</h4>
+        </div>
+    </div>
+   
+    <!-- footer -->
+
+    <%- include ('comun/footer.html')%>
+
+</body>
+
+</html>
